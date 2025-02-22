@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day-1</title>
+
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; 
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: darkgrey;
+        }
+
+        div {
+            width: 1000px;
+            height: 300px;
+            background-color: tan;
+            display: flex;
+            flex-direction: column; 
+            justify-content: center;
+            align-items: center;
+            border: 2px solid #333;
+            border-radius: 10px;
+            margin-top: 20px; 
+            transition: background-color 0.3s ease;
+        }
+
+        h1, button {
+            margin: 10px 0; 
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #0056b3; 
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1 id="Status">Status</h1> 
+        <button onclick="Login()">Login</button> 
+        <button onclick="Logout()">Logout</button>
+    </div>
+</body>
+</html>
+
+<script>
+    function Login(){
+        document.getElementById("Status").innerText="Login Sucess"
+        alert("Do you want to login")
+    }
+
+    function Logout(){
+        document.getElementById("Status").innerText="Logout Sucess"
+        alert("Do you want to Logout")
+    }
+</script>
