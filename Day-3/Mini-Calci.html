@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini-Calci</title>
+
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+        }
+        body{
+            background-color: wheat;
+        }
+        #first{
+            background-color: rgb(35, 61, 77);
+            margin: 0px;
+            padding: 50px;
+            text-align: center;
+        }
+        .second{
+            background-color: rgb(35, 61, 77);
+            margin: 0px;
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+  <div id="first">
+    <input type="number" name="num1" id="num1" placeholder="Enter 1st Number">
+    <input type="number" name="num2" id="num2" placeholder="Enter 2nd Number">
+  </div>
+    
+<br>
+<div class="second">
+
+    <button onclick="add()">Add</button>
+    <button onclick="subtract()">Subtract</button>
+    <button onclick="multiply()">Multiply</button>
+    <button onclick="divide()">Divide</button>
+    <button onclick="Mod()">Modulus</button>
+
+</div>
+</body>
+
+</html>
+
+<script>
+    let inp1 = document.getElementById("num1");
+    let inp2 = document.getElementById("num2");
+
+    
+    
+    function add() {
+        let a = (Number)(inp1.value) + (Number)(inp2.value);
+        alert(a);
+    }
+
+    function subtract() {
+        let b = inp1.value - inp2.value;
+        alert(b);
+    }
+    function multiply() {
+        let c = inp1.value * inp2.value;
+        alert(c);
+    }
+
+    function divide() {
+        let d = inp1.value / inp2.value;
+        alert(d);
+    }
+
+    function Mod(){
+        let e =inp1.value % inp2.value;
+        alert(e);
+    }
+    
+</script>
