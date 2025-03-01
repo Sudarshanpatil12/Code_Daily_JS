@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background: url('india_background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+}
+
+header {
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 5px solid #ff9933; /* Saffron color */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+header p {
+    margin: 10px 0 0;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+section {
+    padding: 30px;
+    margin: 30px auto;
+    max-width: 800px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent white */
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(5px); /* Blur effect */
+}
+
+section h2 {
+    color: #333;
+    border-bottom: 3px solid #ff9933; /* Saffron color */
+    padding-bottom: 10px;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.profile-img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    border: 5px solid #fff; /* White border */
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+    color: #fff;
+    margin-top: 40px;
+    font-size: 1.1em;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.5em;
+    }
+
+    header p {
+        font-size: 1.2em;
+    }
+
+    section {
+        padding: 20px;
+        margin: 20px;
+    }
+
+    section h2 {
+        font-size: 1.8em;
+    }
+}
